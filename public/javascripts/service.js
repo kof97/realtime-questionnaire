@@ -5,7 +5,7 @@ angular.module('pollServices', ['ngResource']).
 		})
 	}).
 	factory('socket', function($rootScope) {
-		var socket = io.connect();
+		var socket = io();
 		return {
 			on: function (eventName, callback) {
 				socket.on(eventName, function () {  
@@ -20,7 +20,7 @@ angular.module('pollServices', ['ngResource']).
               		var args = arguments;
               		$rootScope.$apply(function () {
                 		if (callback) {
-                  		callback.apply(socket, args);
+                  			callback.apply(socket, args);
                 		}
               		});
             	})

@@ -4,7 +4,9 @@
  * Module dependencies.
  */
 
-var app = require('../app');
+var app = require('../app').app;
+var routes = require('../app').routes;
+
 var debug = require('debug')('realtime-questionnaire:server');
 var http = require('http');
 
@@ -24,9 +26,13 @@ var server = http.createServer(app);
 /**
  * socket.io
  */
-var io = require('socket.io')(server);
+var io = require('socket.io').listen(server);
 
 io.sockets.on('connection', routes.vote);
+
+server.listen(app.get('port'), function(){
+    console.log('Express server listening on port ' + app.get('port'));
+});
 
 /*
 io.on('connection', function(socket) {
@@ -37,7 +43,7 @@ io.on('connection', function(socket) {
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(port);
+// server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
 
