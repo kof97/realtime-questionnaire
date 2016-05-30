@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="polls">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<title><%= title %></title>
+
+		<!--[if lt IE9]> 
+			<script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+		<![endif]-->
+
+	    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css">
+	    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+
+	</head>
+	<body ng-controller="PollListCtrl">
+	    <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-header">
+				<a href="#/polls" class="navbar-brand">Questionnaire</a>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div ng-view></div>
+		</div>
+
+
+	</body>
+</html>
+
+<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+<script src="http://apps.bdimg.com/libs/angular-resource/1.2.16/angular-resource.js"></script>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<script src="/javascripts/app.js"></script>
+
+<script src="/javascripts/controller.js"></script>

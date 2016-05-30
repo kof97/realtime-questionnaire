@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="polls">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+		<title>Polls</title>
+
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/stylesheets/style.css">
+		
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular-resource.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="/javascripts/app.js"></script>
+		<script src="/javascripts/services.js"></script>
+		<script src="/javascripts/controllers.js"></script>
+
+	</head>
+
+	<body ng-controller="PollListCtrl">
+		<nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-header">
+				<a href="#/polls" class="navbar-brand">Polls</a>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div ng-view></div>
+		</div>
+
+		<script src="http://www.ibm.com/developerworks/js/bluemix/poweredByBluemix.js"></script>
+	</body>
+</html>
