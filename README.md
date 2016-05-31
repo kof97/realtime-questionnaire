@@ -20,6 +20,8 @@
 
 `dbpath` 为你的数据目录，我的是 `D:\data\db`
 
+或者提前写好 `mongo.config` 配置文件
+
 > mongod --dbpath D:\data\db
 
 然后进入到 `bin` 目录下，开启服务
