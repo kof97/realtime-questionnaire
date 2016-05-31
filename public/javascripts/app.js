@@ -74,7 +74,6 @@ angular.module("polls", ['ngRoute', 'pollServices'])
             when('/new', { templateUrl: 'part/new.html', controller: 'PollNewCtrl' }).
             otherwise({ redirectTo: '/polls' });
 
-        //$locationProvider.html5Mode(true);
     }]);
 
 
