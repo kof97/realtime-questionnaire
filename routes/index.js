@@ -10,7 +10,7 @@ var Poll = db.model('polls', PollSchema);
 
 
 router.get('/', function(req, res) {
-    res.render('index', { title: 'Questionnaire' });
+    res.render('index', { title: 'vote666' });
 });
 
 router.get('/polls/polls', function(req, res) { 

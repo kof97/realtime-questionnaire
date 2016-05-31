@@ -4,6 +4,10 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+.list-item li { font-style: normal; padding: 1px 0; font-size: 1.1em; }
+.navbar-fixed-bottom li { margin: 1.1em 1.7em; font-size: 1.1em; list-style-type: none; display: inline-block; }
+.navbar-fixed-bottom li a { color: #fff; text-decoration: none;}
+
 .result-table {
   	margin: 20px 0;
   	width: 100%;
@@ -16,6 +20,6 @@ body {
   	text-align: right;
 }
 .result-table td table {
-  	background-color: lightblue;
+  	background-color: #ADD8E6;
   	text-align: right;
 }

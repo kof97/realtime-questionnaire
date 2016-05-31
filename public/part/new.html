@@ -1,13 +1,13 @@
     <div class="page-header">
-        <h1>Create New Poll</h1>
+        <h1>创建一个新投票</h1>
     </div>
     <form role="form" ng-submit="createPoll()">
         <div class="form-group">
-            <label for="pollQuestion">Question</label>
+            <label for="pollQuestion">投票话题</label>
             <input type="text" ng-model="poll.question" class="form-control" id="pollQuestion" placeholder="Enter poll question">
         </div>
         <div class="form-group">
-            <label>Choices</label>
+            <label>选项</label>
             <div ng-repeat="choice in poll.choices">
                 <input type="text" ng-model="choice.text" class="form-control" placeholder="Enter choice {{$index+1}} text"><br>
             </div>
@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-xs-12">
                 <button type="button" class="btn btn-default" ng-click="addChoice()">
-                    <span class="glyphicon glyphicon-plus"></span> Add another
+                    <span class="glyphicon glyphicon-plus"></span> 添加一个新选项
                 </button>
             </div>
         </div>
@@ -23,11 +23,11 @@
         <div class="row">
             <div class="col-xs-6">
                 <a href="#/polls" class="btn btn-default" role="button">
-                    <span class="glyphicon glyphicon-arrow-left"></span> Back to Poll List
+                    <span class="glyphicon glyphicon-arrow-left"></span> 回到投票列表
                 </a>
             </div>
             <div class="col-xs-6">
-                <button class="btn btn-primary pull-right" type="submit">Create Poll &raquo;</button>
+                <button class="btn btn-primary pull-right" type="submit"> Create &raquo;</button>
             </div>
         </div>
         <p>&nbsp;</p>
